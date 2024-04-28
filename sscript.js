@@ -12,7 +12,7 @@ form.addEventListener('submit', (e)=>
 {
   var email_check = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if(name.value === '' || name.value == null)
+  if(name.value === '' || name.value == null || name.value>=0 || name.value<=0)
   {
       e.preventDefault();
       name_error.innerHTML = "Name is required"
